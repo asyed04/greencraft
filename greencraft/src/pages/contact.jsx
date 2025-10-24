@@ -1,6 +1,5 @@
 import React from 'react';
 import heroImage from '../assets/landscape-bg.jpg'; // Replace with your background image
-
 export default function Contact() {
   return (
     <div
