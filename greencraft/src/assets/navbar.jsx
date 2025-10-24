@@ -16,13 +16,13 @@ export default function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className="relative bg-white-800 dark:bg-white-800/50 dark:after:pointer-events-none dark:after:absolute dark:after:inset-x-0 dark:after:bottom-0 dark:after:h-px dark:after:bg-white/10"
+      className="relative bg-green-50 dark:bg-green-900/10 dark:after:pointer-events-none dark:after:absolute dark:after:inset-x-0 dark:after:bottom-0 dark:after:h-px dark:after:bg-green-900/20"
     >
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-20 items-center justify-between">
           <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
-            <DisclosureButton className="group relative inline-flex items-center justify-end rounded-md p-3 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
+            <DisclosureButton className="group relative inline-flex items-center justify-end rounded-md p-3 text-green-700 hover:bg-green-100 hover:text-green-900 focus:outline-2 focus:-outline-offset-1 focus:outline-green-500">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
               <Bars3Icon aria-hidden="true" className="block h-8 w-8 group-data-open:hidden" />
@@ -46,8 +46,8 @@ export default function Navbar() {
                     aria-current={item.current ? 'page' : undefined}
                     className={classNames(
                       item.current
-                        ? 'bg-green-900 text-dark dark:bg-green-950/50'
-                        : 'text-dark-300 hover:bg-green-50 hover:text-green-600',
+                        ? 'bg-green-200 text-green-900'
+                        : 'text-green-700 hover:bg-green-100 hover:text-green-900',
                       'rounded-md px-4 py-3 text-lg font-medium',
                     )}
                   >
@@ -70,8 +70,8 @@ export default function Navbar() {
               aria-current={item.current ? 'page' : undefined}
               className={classNames(
                 item.current
-                  ? 'bg-green-900 text-dark dark:bg-green-950/50'
-                  : 'text-gray-300 hover:bg-green-50 hover:text-green-600',
+                  ? 'bg-green-200 text-green-900'
+                  : 'text-green-700 hover:bg-green-100 hover:text-green-900',
                 'block rounded-md px-4 py-3 text-lg font-medium',
               )}
             >
